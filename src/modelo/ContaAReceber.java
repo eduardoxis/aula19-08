@@ -57,7 +57,7 @@ public class ContaAReceber implements ContaInterface {
     public void addPagamento(Pagamento p) throws Exception {
 
         if(valorPago+p.getValor()>valor)
-            throw new Exception("valor execedeu a conta!!!!");
+            throw new Exception("valor execedeu a conta!!!");
         pagamentoList.add(p);
 
         valorPago = valorPago +p.getValor();
